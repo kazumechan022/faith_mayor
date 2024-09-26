@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+</head>
+<body>
+    <table border="1">
+        <h1>Student List</h1>
+        <a href='/'>Back to Home</a><br>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Program</th>
+            <th>Address</th><br>
+        </tr>
+        <% stud_info.forEach(info => { %>
+            <td><%= info.first_name%></td>
+            <td><%= info.last_name%></td>
+            <td><%= info.program%></td>
+            <td><%= info.address%></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
